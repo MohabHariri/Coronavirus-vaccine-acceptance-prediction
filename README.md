@@ -1,5 +1,5 @@
 
-Introduction
+#Introduction
 
 Coronavirus vaccines and the beginning of the vaccination program caused some controversy about the importance of the vaccine. Some people were greatly influenced by conspiracy theories and refused the vaccine due to the widespread of fake news about it, while others have personal exceptions for not accepting the vaccine.
 
@@ -11,12 +11,14 @@ Predicting the likelihood of receiving the vaccine in the community is an effect
 
 In this project, many machine learning algorithms have been used for the prediction task like logistic regression, Random Forest, KNN and Support Vector Machine. The results showed acceptable accuracy achieved by most of these algorithms.
 
-MATERIALS AND METHODS
+#MATERIALS AND METHODS
 
-Dataset Description The dataset which was used in this work was taken from “Mendeley Data” website and includes information from approximately 2978 respondents. This information includes 94 features like age, gender, sources of Covid-19 updates, financial status, race and education level all of which was collected through a survey. The survey was conducted on the assumption that socio-demographic factors can affect the decision about accepting a vaccine or not. The survey showed that 81.1% of the participants indicated their willingness to accept the vaccine.
+##Dataset Description
+The dataset which was used in this work was taken from “Mendeley Data” website and includes information from approximately 2978 respondents. This information includes 94 features like age, gender, sources of Covid-19 updates, financial status, race and education level all of which was collected through a survey. The survey was conducted on the assumption that socio-demographic factors can affect the decision about accepting a vaccine or not. The survey showed that 81.1% of the participants indicated their willingness to accept the vaccine.
 The features in the dataset were used as input while “covid_vaccine” feature was used as output. “covid_vaccine” feature represents the answer of the question: Would you like to get COVID-19 vaccine, If available? The dataset was divided to two parts, first part was used as train data while second part was used as test data with ratio of 70% and 30% respectively.
 
-Data Processing The database that was used in this project was not ideal as it had many flaws such as misinformation. In addition, there are many features which have object type and must be converted into numbers to allow computer interpretation.
+##Data Processing
+The database that was used in this project was not ideal as it had many flaws such as misinformation. In addition, there are many features which have object type and must be converted into numbers to allow computer interpretation.
 Initially, the data was checked to get idea about the null cells for each feature. The features which have high number of null cells were dropped. Most of the dropped features are not important and don’t affect the prediction task (i.e. US_State, child and nasal_spray). For example, the state where the respondent lives, doesn't affect his decision to accept or refuse the vaccine. “Your_race” feature wasn’t dropped because the number of null cells is not high and it is considered as an important factor which can affect the result. The number of remaining features is 76.
 
 Many of these 76 features also have null cells but they were treated in a different way; however, the null cells in these features were filled with the most frequent integer, float or object. For example, the most frequent integer in “healthcare_worker” feature was 0. This feature describes if the respondent is healthcare worker (1) or not (0).
@@ -25,7 +27,7 @@ The same procedure was applied to the features which have object components wher
 
 The heat map shows the correlation between the features. The features which have positive and negative correlation with the output were kept. The number of remaining features after applying this technique are 44.
 
-Experiments
+#Experiments
 
 Machine learning algorithms were used in this work for the classification task. Considering that there are a large number of algorithms in machine learning, the algorithms that were used in this work were chosen on the basis that the project focuses on classification task, as the aim is to identify the relationship between many variables or features and the output (will accept the vaccine or not). In addition, supervised machine learning category was performed as the model will be trained with the given dataset.
 
