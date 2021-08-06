@@ -1,3 +1,4 @@
+
 Introduction
 
 Coronavirus vaccines and the beginning of the vaccination program caused some controversy about the importance of the vaccine. Some people were greatly influenced by conspiracy theories and refused the vaccine due to the widespread of fake news about it, while others have personal exceptions for not accepting the vaccine.
